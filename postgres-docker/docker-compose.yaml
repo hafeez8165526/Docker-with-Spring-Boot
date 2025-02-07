@@ -1,0 +1,12 @@
+version: '4.0'
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_USER=root
+  admin:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080

@@ -1,0 +1,8 @@
+version: '4.0'
+services:
+  volume-mapping:
+    image: nginx
+    ports:
+      - 81:80
+    volumes:
+      - .:/usr/share/nginx/html

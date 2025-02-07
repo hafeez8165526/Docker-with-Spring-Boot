@@ -1,0 +1,13 @@
+version: '3.0'
+services:
+  my-app:
+    image: nginx
+    ports:
+      - "81:80"
+    volumes:
+      - .:/usr/share/nginx/html
+  util:
+    image: vinsdocker/util
+    depends_on:
+      - my-app
+    command: "curl http://my-app"

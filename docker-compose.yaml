@@ -1,0 +1,6 @@
+version: '3.0'
+services:
+  my-app:
+    image: nginx
+    ports:
+      - "81:80"
