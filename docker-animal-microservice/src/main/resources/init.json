@@ -1,0 +1,44 @@
+[
+	{
+		"httpRequest": {
+			"path": "/search",
+			"queryStringParameters": {
+				"animal": "cat"
+			}
+		},
+		"httpResponse": {
+			"statusCode": 200,
+			"body": {
+				"res": [
+					{
+						"foodName": "milk"
+					},
+					{
+						"foodName": "mouse"
+					}
+				]
+			}
+		}
+	},
+	{
+		"httpRequest": {
+			"path": "/search",
+			"queryStringParameters": {
+				"animal": "dog"
+			}
+		},
+		"httpResponse": {
+			"statusCode": 200,
+			"body": {
+				"res": [
+					{
+						"foodName": "biscuit"
+					},
+					{
+						"foodName": "dogfood"
+					}
+				]
+			}
+		}
+	}
+]
